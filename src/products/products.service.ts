@@ -46,8 +46,7 @@ export class ProductsService {
       updatedProduct,
       { new: true },
     );
-    return updateProduct;
-    // const updatedProduct = {}
+    //  updatedProduct = {}
     // if (title) {
     //   updatedProduct.title = title;
     // }
@@ -57,7 +56,10 @@ export class ProductsService {
     // if (price) {
     //   updatedProduct.price = price;
     // }
-    //updatedProduct.save();
+   // updatedProduct.save(); // unable to update the contents
+   
+    return updateProduct;
+
   }
 
   async deleteProduct(prodId: string) {
